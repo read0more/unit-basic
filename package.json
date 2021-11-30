@@ -1,0 +1,23 @@
+{
+  "name": "unit-basic",
+  "version": "1.0.0",
+  "description": "unit-basic",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/read0more/unit-basic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/read0more/unit-basic/issues"
+  },
+  "homepage": "https://github.com/read0more/unit-basic#readme",
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "jest": "^27.3.1"
+  }
+}
