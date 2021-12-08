@@ -5,11 +5,13 @@ import HabitAddForm from "../habitAddForm";
 describe("habit add form", () => {
   it("add habit", () => {
     const onAdd = jest.fn();
-    const { getByText, getAllByPlaceholderText } = render(
-      <HabitAddForm onAdd={onAdd} />
-    );
-    fireEvent.change(getByLabelText(/Habit/i), { target: { value: "test" } });
-    fireEvent.click(getByText(/Add/i));
+    render(<HabitAddForm onAdd={onAdd} />);
+    const input = screen.getByPlaceholderText("Habit");
+    const button = screen.getByText("Add");
+    fireEvent.change(input, {
+      target: { value: "test" },
+    });
+    fireEvent.click(button);
     expect(onAdd).toBeCalled();
   });
 });
