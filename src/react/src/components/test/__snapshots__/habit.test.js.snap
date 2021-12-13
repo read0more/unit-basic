@@ -12,7 +12,7 @@ exports[`habit renders 1`] = `
   </span>
   <span
     className="habit-count"
-    data-testid="count-label"
+    data-testid="habit-count"
   >
     3
   </span>

@@ -48,7 +48,7 @@ Array [
         </span>
         <span
           className="habit-count"
-          data-testid="count-label"
+          data-testid="habit-count"
         >
           0
         </span>
@@ -91,7 +91,7 @@ Array [
         </span>
         <span
           className="habit-count"
-          data-testid="count-label"
+          data-testid="habit-count"
         >
           0
         </span>
@@ -134,7 +134,7 @@ Array [
         </span>
         <span
           className="habit-count"
-          data-testid="count-label"
+          data-testid="habit-count"
         >
           1
         </span>

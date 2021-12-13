@@ -18,7 +18,7 @@ const Habit = memo(({ habit, onIncrement, onDecrement, onDelete }) => {
       <span className="habit-name" data-testid="habit-name">
         {habit.name}
       </span>
-      <span className="habit-count" data-testid="count-label">
+      <span className="habit-count" data-testid="habit-count">
         {habit.count}
       </span>
       <button

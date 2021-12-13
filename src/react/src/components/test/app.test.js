@@ -40,7 +40,7 @@ describe("App", () => {
       userEvent.click(button);
       const addedName = screen.getAllByTestId("habit-name")[3];
       expect(addedName.innerHTML).toBe(newHabit);
-      const addedCount = screen.getAllByTestId("count-label")[3];
+      const addedCount = screen.getAllByTestId("habit-count")[3];
       expect(addedCount.innerHTML).toBe("0");
     });
 
@@ -54,21 +54,21 @@ describe("App", () => {
     it("increases the counter", () => {
       const button = screen.getAllByTitle("increase")[0];
       userEvent.click(button);
-      const count = screen.getAllByTestId("count-label")[0];
+      const count = screen.getAllByTestId("habit-count")[0];
       expect(count.innerHTML).toBe("1");
     });
 
     it("decreases the counter", () => {
       const button = screen.getAllByTitle("decrease")[2];
       userEvent.click(button);
-      const count = screen.getAllByTestId("count-label")[2];
+      const count = screen.getAllByTestId("habit-count")[2];
       expect(count.innerHTML).toBe("0");
     });
 
     it("resets all counters", () => {
       const button = screen.getByText("Reset All");
       userEvent.click(button);
-      screen.getAllByTestId("count-label").forEach((count) => {
+      screen.getAllByTestId("habit-count").forEach((count) => {
         expect(count.innerHTML).toBe("0");
       });
     });
